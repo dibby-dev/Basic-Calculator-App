@@ -1,2 +1,2 @@
-# Web-Dev-Projects
-Here I will store codes for the website I have built.
+# Basic-Calculator-App
+Here I have saved a simple calculator app built by me Using HTML, CSS & JavaScript.
