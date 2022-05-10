@@ -113,7 +113,13 @@ function spaceCounter(val)
 function clearData(val)
 {
   if(val=='C')
-  {   
+  {
+    last_input = inputDisplay.slice(-1);
+    if(last_input==operators[opCount-1]) 
+    {
+      operators.pop();
+      opCount--;
+    }
     inputDisplay = inputDisplay.substring(0,inputDisplay.length-1);        
   }
   else if(val=='AC')
@@ -144,7 +150,7 @@ function operator(val)
   last_input = inputDisplay.slice(-1);
   if(last_input>='0' && last_input<='9')
   {
-    operators[opCount] = val;
+    operators.push(val);
     opCount++;
     inputDisplay += val;
     displayIn.textContent = inputDisplay;
