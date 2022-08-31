@@ -163,7 +163,5 @@ function operator(val)
     inputDisplay = inputDisplay.substring(0,inputDisplay.length-1)+val;
     displayIn.textContent = inputDisplay;
   }
-  // console.log("opCount:",opCount);
-  // console.log("operators:",operators);
-  // console.log("/////////////////////");
+  
 }
